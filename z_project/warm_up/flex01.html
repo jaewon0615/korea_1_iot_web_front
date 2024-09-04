@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex01.html</title>
+  <style>
+
+    div{
+      border: 3px solid black;
+      padding: 80px;
+      
+    }
+    /* 테두리 */
+    #container{    
+      border: 3px solid black;
+      width: 1100px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /* 안에 박스 */
+    .box{
+      border: 2px solid black;
+      border-collapse: collapse;
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>
