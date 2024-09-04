@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App Project</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div id="weather-container">
+    <h1 id="header">monday,april,8,2024</h1>
+    <div id="tempcity">-3°C seoul🌤️</div>
+    <div class="overlay"></div>
+    <input type="checkbox" id="toggle" hidden> 
+  <label for="toggle" class="toggleSwitch" id="toggleSwitch" >
+  <span class="toggleButton"></span>
+  </label>
+    
+
+  </div>
+
+
+
+  <div class="search" style="background-color:rgba(0, 0, 0, 0.3)">
+
+    <div class="searchbox">
+      <input type="text" placeholder="search🔍" style="background-color:gray; width: 80%; height: 50px; border-radius: 20px 0 0 0; margin-top: 30px; margin-left: 40px; font-size: 30px; padding-left: 10px; border-width: 0px 0px 2px; border-color: black;">
+    </div>
+
+    <div id="weather-info">Weather details
+    <hr>
+    <div id="list">
+      <ul>
+        <li>Max/Min Temp</li>
+        <li>Humidity</li>
+        <li>Wind</li>
+        <li>Cloudy</li>
+      </ul>
+      <ul style="padding-right: 25px;">
+        <li>-4c / -3c</li>
+        <li>29%</li>
+        <li>4.69km/h</li>
+        <li>1%</li>
+      </ul>
+    </div>
+    </div>
+    </div>
+
+
+  <script src="./main.js"></script>
+</body>
+</html>
