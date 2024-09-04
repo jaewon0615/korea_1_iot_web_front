@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex02.html</title>
+  <style>
+    .container{
+      display: flex;
+      margin: 10px auto;
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+    .item{
+      background-color: #ffccbb;
+      padding: 20px;
+      margin: 5px;
+      border: 1px solid black;
+      min-width: 50px;
+      text-align: center;
+    }
+    /* example1 부모요소 내의 .flex-1요소를 지정 */
+    .example1 .flex-1{
+      flex: 1;
+    }
+    .example1 .flex-2{
+      flex: 2;
+    }
+    .example1 .flex-3{
+      flex: 1;
+    }
+    /* flex 아이템의 최소 크기값 지정 */
+    .example2 .flex-1-min{
+      flex: 1 200px;
+
+    }
+    .example2 .flex-2-min{
+      flex: 2 200px;
+
+    }
+    .example2 .flex-3-min{
+      flex: 1 200px;
+    }
+    /* flex속성:flex grow/shirink/basis속성의 약칭(한번에 작성) */
+    /* grow 속성:늘어나는 비율을 지정 */
+    .example3 .grow-1{
+      flex-grow: 1;
+    }
+    .example3 .grow-2{
+      flex-grow: 2;
+    }
+    .example3 .grow-3{
+      flex-grow: 3;
+    }
+
+    /* shirink속성:줄어드는 속도를 지정 */
+    .example4{
+      width: 300px;
+    }
+    #shirink{
+      display: flex;
+      width: 300px;
+      border: 1px solid black;
+    }
+    .box{
+      flex-grow: 1;
+      flex-basis: 200px;
+      margin: 5px;
+      text-align: center;
+      line-height: 100px;
+      color: white;
+    }
+    /*  쉬링크에서 속성값이 클수록 차지하는 너비값이 가장 작다 */
+    .shirink-1{
+      background-color: red;
+      flex-shrink: 1;
+      /* flex-shrink: 1;기본값 */
+    }
+    .shirink-2{
+      background-color: green;
+      flex-shrink: 2;
+      /* flex-shrink: 1;기본값 */
+    }
+    .shirink-3{
+      background-color:blue;
+      flex-shrink: 3;
+      /* flex-shrink: 1;기본값 */
+    }
+    /* basis속성:요소의 아이템의 기본 크기를 지정 */
+    .example5 .basis-1{
+      flex-basis: 100px;
+      flex-shrink: 5;
+    }
+    .example5 .basis-2{
+      flex-basis: 200px;
+      flex-shrink: 3;
+    }
+    .example5 .basis-3{
+      flex-basis: 300px;
+      flex-shrink: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container example1">
+    <div class="item flex-1">1</div>
+    <div class="item flex-2">2</div>
+    <div class="item flex-3">3</div>
+  </div>
+  <div class="container example2">
+    <div class="item flex-1-min">1</div>
+    <div class="item flex-2-min">2</div>
+    <div class="item flex-3-min">3</div>
+  </div>
+  <h2>grow</h2>
+  <div class="container example3">
+    <div class="item grow-1">1</div>
+    <div class="item grow-2">2</div>
+    <div class="item grow-3">3</div>
+  </div>
+  <h2>shirink</h2>
+  <div id="shirink">
+    <div class="box shirink-1">1</div>
+    <div class="box shirink-2">2</div>
+    <div class="box shirink-3">3</div>
+  </div>
+  <h2>basis</h2>
+  <div class="container example5">
+    <div class="item basis-1">1</div>
+    <div class="item basis-2">2</div>
+    <div class="item basis-3">3</div>
+  </div>
+</body>
+</html>

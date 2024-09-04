@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex01.html</title>
+  <style>
+    .container{
+      display: flex;
+      margin: 10px auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+      width: 80%;
+      justify-content: space-around;
+    }
+
+    .item{
+      background-color: lightcoral;
+      padding: 20px;
+      margin: 5px;
+      border: 1px solid #000;
+      text-align: center;
+      min-width: 50px;
+    }
+
+    /* 기본 설정:행 방향 정렬 */
+    .example1{
+      flex-direction: row;
+    }
+    .example2{
+      flex-direction: column;
+    }
+    .example3{
+      /* direction을 지정하지 않은경우:기본 row설정 */
+      /* flex-wrap:nowrap-기본값 래핑되지 않음 */
+      flex-wrap:wrap-reverse;
+      /* flex-wrap:nowrap ; */
+    }
+    .eaxmple4{
+      /* flex-direction: row-reverse;
+      flex-wrap: wrap; */
+      flex-flow:wrap-reverse;
+    }
+  </style>
+</head>
+<body>
+  <h1>flexbox 강의자료</h1>
+  <section>
+    <h2>1.기본 flex구조 만들기</h2>
+    <div class="container example1" >
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+    <h2>2.기본 flex direction 주축/교차축 변경</h2>
+    <div class="container example2" >
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+    <h2>3.flex wrap 아이템 래핑</h2>
+    <div class="container example3" >
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+    </div>
+    <h2>4.flex flow 아이템 정렬/래핑 동시지정-단축속성</h2>
+    <div class="container example4" >
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+    </div>
+  </section>
+</body>
+</html>

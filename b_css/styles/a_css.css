@@ -1,0 +1,13 @@
+/*안녕하세요 css 주석입니다*/
+
+table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th{
+  background-color: lightskyblue;
+}
+td{
+  background-color: #ccc;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input01.html</title>
+  <link rel="stylesheet" href="../f_head.css">
+</head>
+
+  <!-- input태그의 기본 속성-type,name,value
+  type속성의 값에 따라 input태그의 형태가 달라짐-->
+  <input type="text">
+  <!-- 1.text&password속성값 -->
+
+  <hr />
+
+  <label>
+    아이디
+    <input type="text" size="10" maxlength="5" value="ssssss993" placeholder="아이디를 입력헤주세요" />
+  </label>
+  <br />
+  <label>
+    비밀번호
+    <input type="Password">
+  </label>
+
+  <br />
+
+  <!-- 2.email -->
+  <form>
+    <label>
+      이메일
+      <input type="email">
+    </label>
+    <button type="submit">전송버튼</button>
+  </form>
+  <!-- 3.radio % checkbox 속성값 -->
+  <br />
+  <h3>가장 좋아하는 야구팀은?</h3>
+  <label >
+    <input type="checkbox" value="롯데" >롯데자이언츠
+  </label>
+  <label>
+    <input type="checkbox"value="기아">기아티이거즈
+  </label>
+  <label >
+    <input type="checkbox" value="lg">lg트윈스
+
+  </label>
+  <label >
+    <input type="checkbox" value="두산" checked>두산베어스
+
+  </label>
+
+  <h3>성별이 무엇입니까</h3>
+  <label>
+    남 <input type="radio" name="gender" checked>
+  </label>
+  <label>
+    여 <input type="radio" name="gender">
+  </label>
+  <label>
+    모름 <input type="radio" name="gender">
+  </label>
+
+  <br />
+  <h3>이벤트 메시지 수신 동의</h3>
+  <label>
+    동의 <input type="radio" name="agree" checked>
+  </label>
+  <label>
+    동의 안함 <input type="radio" name="agree">
+  </label>
+
+  <h1>2024 프로야구 우승팀</h1>
+  <p style="color: navy; background-color: yellow;">두산베어스</p>
+
+  <style>
+    h1 {
+      width: 350px;
+      padding: 10px;
+      background-color: black;
+      color: tomato;
+    }
+    p {
+      color: navy;
+      background-color: yellow;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>2024 프로야구 우승팀</h1>
+  <p>두산베어스</p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+h1{
+  color: green;
+}
+h2{
+  color: blue !important;
+}
+/* 테그(타입,요소)선택자 */
+
+/* id선택자:#
+class선택자:.*/
+
+#monday{
+  color: blueviolet;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.git{
+  color: lightgoldenrodyellow;
+}
+
+h1{
+  color: pink;
+}
+h1{
+  color: red;
+    background-color: aliceblue;
+    width:600px;
+    margin:10px auto;
+    padding: 20px;
+  }
+
+h1{
+  color: orange;
+  padding: 20px;
+}
+
+/* 스타일 상속 */
+body{
+  font-size: 30px;
+  background-color: yellowgreen;
+  border-radius: 50%;
+}
+
+p{
+  font-size: 10px;
+  background-color: transparent;
+}

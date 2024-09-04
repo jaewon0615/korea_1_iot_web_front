@@ -1,0 +1,21 @@
+*{
+  /* 너비 계산 시 보더까지 포함 */
+  box-sizing: border-box;
+}
+/* div태그 */
+#kbo{
+  width: 100px;
+  height: 250px;
+  background-color: lightblue;
+  border: 5px solid black;
+  padding: 10px;
+  float:l;
+  clear: left;
+}
+
+/* span태그 */
+.fall{
+  width: 100px;
+  height: 150px;
+  background-color: lightcoral;
+}
